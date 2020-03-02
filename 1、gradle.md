@@ -42,6 +42,8 @@ Gradle通常使用Groovy或Java语言编写构建脚本<br>
   ```
   
  *  通过java –jar build/libs/项目名-1.0.jar运行应用程序
+ 
+ 两只种构建Gradle项目的方法：一种是手动，另一种是使用gradle init 这个命令。
 
 
 
