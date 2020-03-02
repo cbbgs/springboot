@@ -17,8 +17,8 @@ Gradle通常使用Groovy或Java语言编写构建脚本<br>
 ## 2.建立自己的gradle项目
   标志性的文件就是build.gradle<br>
   提供了默认的文件目录结构<br>
-    src/main/java <br>
-    src/test/java <br>
+    src/main/java java业务代码<br>
+    src/test/java java测试代码<br>
     
     
    * 创建一个Java工程，包括一个src/main/java文件夹和一个build.gradle文件。Java源文件放在src/main/java中。build.gradle只有一条语句:apply plugin:’java’，说明要使用Java插件。<br>
@@ -43,7 +43,19 @@ Gradle通常使用Groovy或Java语言编写构建脚本<br>
   
  *  通过java –jar build/libs/项目名-1.0.jar运行应用程序
  
- 两只种构建Gradle项目的方法：一种是手动，另一种是使用gradle init 这个命令。
+  两只种构建Gradle项目的方法：一种是手动，另一种是使用gradle init 这个命令。
+  
+  
+  #### 自定义任务
+  ```groovy
+    task hello{
+      doLast{
+        println 'hello world'
+      }
+    }
+  
+ ```
+ 
 
 
 
