@@ -133,10 +133,45 @@ plugins{
 
 ### 自定义任务
 
+1、通过继承DefauleTask去创建自定义任务类，my1相当于是MyTask的一个实现类
+
+```groovy
+class MyTask extends DeafaultTask{
+    @intput
+    String a;
+    @TaskActive
+    println("hahah" $(a))
+    }
+   task my1(type:MyTask){
+   
+   }
+
+```
 
 
+2、将自定义的任务类放在其他配置文件中。
+在java/src/main/groovy/my.gradle中
+```groovy
+class MyTask extends DeafaultTask{
+    @intput
+    String a;
+    @TaskActive
+    println("hahah" $(a))
+    }
+	
+```
 
+在build.gradle中
+```groovy
+plugins{
+	
+}
 
+ task my1(type:MyTask){
+   
+   }
+
+```
 
 
  
