@@ -139,7 +139,7 @@ plugins{
 class MyTask extends DeafaultTask{
     @intput
     String a;
-    @TaskActive
+    @TaskAction
     println("hahah" $(a))
     }
    task my1(type:MyTask){
@@ -155,7 +155,7 @@ class MyTask extends DeafaultTask{
 class MyTask extends DeafaultTask{
     @intput
     String a;
-    @TaskActive
+    @TaskAction
     println("hahah" $(a))
     }
 	
